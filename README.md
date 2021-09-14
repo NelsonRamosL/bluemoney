@@ -1,0 +1,1 @@
+ejecutar archivo inicio.js
