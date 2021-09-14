@@ -54,6 +54,10 @@ fs.writeFile(`${nombreArchivo}.${extencionArchivo}`, textoPublicar, 'utf8', () =
     console.log('Archivo creado con éxito')
     })
 
+
+ /** 
+ 4. Enviar por consola el contenido del archivo luego de que haya sido creado.
+ */
     fs.readFile(`${nombreArchivo}.${extencionArchivo}`, 'utf8', function(err, data){
      
         // Display the file content
@@ -62,9 +66,7 @@ fs.writeFile(`${nombreArchivo}.${extencionArchivo}`, textoPublicar, 'utf8', () =
      
     console.log('readFile called');
 
-/** 
- 4. Enviar por consola el contenido del archivo luego de que haya sido creado.
- */
+
 
 
 
@@ -77,3 +79,13 @@ fs.writeFile(`${nombreArchivo}.${extencionArchivo}`, textoPublicar, 'utf8', () =
 console.log('Error: ' + err.message)
 })
 
+
+
+/** 
+
+ejemplo con 
+
+node .\index.js archivoprueba txt dolar 50500
+
+
+*/
